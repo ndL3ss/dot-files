@@ -109,3 +109,14 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 export PATH=$PATH:$HOME/go/bin
 export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.4.0/bin:$PATH"
+
+
+# === Auto tmux start/attach ===
+if (( $+commands[tmux] )); then
+  # skip if already in tmux
+  [[ -n $TMUX ]] && return
+
+  session="main"
+  tmux attach -t $session || tmux new -s $session
+fi
+
