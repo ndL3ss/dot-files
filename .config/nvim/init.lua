@@ -13,6 +13,9 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 
+vim.opt.colorcolumn = "80"
+vim.cmd("highlight ColorColumn ctermbg=darkgrey guibg=lightgrey")
+
 vim.o.relativenumber = true
 
 vim.o.mouse = 'a'
