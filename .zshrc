@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias v="nvim"
 alias ghidra="/opt/ghidra11.3.2/ghidraRun"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias st="shutdown now"
 
 export PATH=$PATH:$HOME/go/bin
 export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"

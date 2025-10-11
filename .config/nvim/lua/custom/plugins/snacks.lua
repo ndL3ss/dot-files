@@ -1,5 +1,5 @@
 return {
-  "folke/snacks.nvim",
+  'folke/snacks.nvim',
   priority = 1000,
   lazy = false,
   ---@type snacks.Config
@@ -7,7 +7,13 @@ return {
     -- your configuration comes here
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
-    dashboard = { enabled = true },
+    dashboard = {
+      sections = {
+        -- { section = 'header' },
+        { section = 'keys', gap = 1, padding = 1 },
+        { section = 'startup' },
+      },
+    },
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
@@ -18,7 +24,13 @@ return {
     statuscolumn = { enabled = true },
     words = { enabled = true },
   },
-    keys = {
-        {"<leader>e", function () Snacks.explorer() end, desc = "snacks file explorer"},
+  keys = {
+    {
+      '<leader>e',
+      function()
+        Snacks.explorer()
+      end,
+      desc = 'snacks file explorer',
     },
+  },
 }
