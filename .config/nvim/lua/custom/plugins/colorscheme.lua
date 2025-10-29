@@ -1,8 +1,7 @@
 return {
-  'webhooked/kanso.nvim',
-  lazy = false,
+  'Mofiqul/dracula.nvim',
   priority = 1000,
   config = function()
-    vim.cmd 'colorscheme kanso-zen'
+    vim.cmd 'colorscheme dracula'
   end,
 }

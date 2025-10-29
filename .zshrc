@@ -110,6 +110,7 @@ alias st="shutdown now"
 export PATH=$PATH:$HOME/go/bin
 export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.4.0/bin:$PATH"
+export PATH="$HOME/.cargo/bin/:$PATH"
 
 
 # === Auto tmux start/attach ===
