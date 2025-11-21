@@ -106,12 +106,16 @@ alias v="nvim"
 alias ghidra="/opt/ghidra11.3.2/ghidraRun"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias st="shutdown now"
+alias sl="systemctl suspend"
 
 export PATH=$PATH:$HOME/go/bin
 export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.4.0/bin:$PATH"
 export PATH="$HOME/.cargo/bin/:$PATH"
 
+
+# ==zxoide autostart==
+eval "$(zoxide init zsh)"
 
 # === Auto tmux start/attach ===
 if (( $+commands[tmux] )); then
@@ -122,3 +126,4 @@ if (( $+commands[tmux] )); then
   tmux attach -t $session || tmux new -s $session
 fi
 
+# ==zxoide autostart==
